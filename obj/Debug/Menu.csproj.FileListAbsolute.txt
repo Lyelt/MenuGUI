@@ -1,0 +1,19 @@
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Menu.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Menu.MenuGUI.resources
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Menu.csproj.GenerateResource.Cache
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\users\nick\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Nick\Desktop\menu\menu\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Nick\Desktop\menu\menu\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Nick\Desktop\menu\menu\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Nick\Desktop\menu\menu\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Nick\Desktop\menu\menu\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Nick\Desktop\menu\menu\obj\Debug\Menu.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Desktop\menu\menu\obj\Debug\Menu.MenuGUI.resources
+C:\Users\Nick\Desktop\menu\menu\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Nick\Desktop\menu\menu\obj\Debug\Menu.csproj.GenerateResource.Cache
+C:\Users\Nick\Desktop\menu\menu\bin\Debug\Resources\plus-button.jpg

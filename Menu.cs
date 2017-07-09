@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace Menu
 {
@@ -45,14 +46,17 @@ namespace Menu
             return item;
         }
 
-        public void AddItem(string name, List<string> ingredients, List<string> types, List<string> meals, string eth)
+        public MenuItem AddItem(string name, List<string> ingredients, List<string> types, List<string> meals, string eth)
         {
             if (!MenuItems.Contains(GetItem(name)))
             {
                 MenuItems.Add(new MenuItem(name, ingredients, types, meals, eth));
+                // Return the newly added item
+                return MenuItems[MenuItems.Count - 1];
             }    
             else
             {
+                return null;
                 // Update/Edit the item?
             }
 
@@ -100,7 +104,7 @@ namespace Menu
                             }
                             break;
                         // The type of food
-                        case ("type"):
+                        case ("types"):
                             var typeNodes = childNode.SelectNodes("li");
                             foreach (XmlNode typeNode in typeNodes)
                             {
@@ -137,7 +141,23 @@ namespace Menu
         }
 
         public void Save( string fileName )
-        {
+        { 
+            var xml = new XElement("items",
+                MenuItems.Select(menuItem =>
+                    new XElement("item",
+                        new XElement("name", menuItem.ItemName),
+                        new XElement("ingredients", menuItem.Ingredients.Select(ing =>
+                            new XElement("li", ing))),
+                        new XElement("types", menuItem.ItemTypes.Select(type =>
+                            new XElement("li", type.ToString()))),
+                        new XElement("meals", menuItem.ItemMeals.Select(meal =>
+                            new XElement("li", meal.ToString()))),
+                        new XElement("ethnicity", menuItem.ItemEthnicity.ToString())
+                        ))
+               );
+
+            xml.Save(fileName);
+            //XmlDocument doc = new XmlDocument();
 
         }
     }

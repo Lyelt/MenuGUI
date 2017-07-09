@@ -84,7 +84,8 @@ namespace Menu
         public MenuItem( string name, List<string> ings, List<string> types, List<string> meals, string ethnicity )
         {
             ItemName = name;
-            Enum.TryParse(ethnicity, out ItemEthnicity);
+            if (!Enum.TryParse(ethnicity, out ItemEthnicity))
+                ItemEthnicity = Ethnicity.None;
             if (ings != null)
                 Ingredients = new List<string>(ings);
             else
@@ -94,7 +95,8 @@ namespace Menu
             foreach (var type in types)
             {
                 FoodType ft;
-                Enum.TryParse(type, out ft);
+                if (!Enum.TryParse(type, out ft))
+                    ft = FoodType.Misc;
                 ItemTypes.Add(ft);
             }
 
@@ -102,10 +104,31 @@ namespace Menu
             foreach (var meal in meals)
             {
                 Meal m;
-                Enum.TryParse(meal, out m);
+                if (!Enum.TryParse(meal, out m))
+                    m = Meal.None;
                 ItemMeals.Add(m);
             }
         }
-        
+
+        public List<string> ItemMeals_Strings()
+        {
+            var returnList = new List<string>();
+            foreach (var item in ItemMeals)
+            {
+                returnList.Add(item.ToString());
+            }
+            return returnList;
+        }
+
+        public List<string> ItemTypes_Strings()
+        {
+            var returnList = new List<string>();
+            foreach (var item in ItemTypes)
+            {
+                returnList.Add(item.ToString());
+            }
+            return returnList;
+        }
+
     }
 }

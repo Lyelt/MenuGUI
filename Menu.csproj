@@ -83,10 +83,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\cancel-button.png" />
+    <Content Include="Resources\minus.png" />
+    <Content Include="Resources\plus-5-512.jpg" />
     <Content Include="Resources\plus-button.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\plus.png" />
+    <None Include="Resources\Save-Button.png" />
     <None Include="Resources\plus1.png" />
     <None Include="Resources\plus-icon.png" />
   </ItemGroup>
